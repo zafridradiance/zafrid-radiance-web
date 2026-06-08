@@ -92,9 +92,9 @@ export const work = {
   lead: "We focus on every surface that takes the full force of the sun, the everyday roofs, vehicles, and structures where reflecting heat makes the biggest difference.",
   projects: [
     {
-      title: "School buses",
+      title: "Public transportation",
       category: "Vehicles",
-      body: "Parked in open lots all day, buses turn into ovens by home time. A reflective coating on the roof sends sunlight back, so children step into a cooler cabin and the air conditioning works far less to catch up.",
+      body: "Buses and transit vehicles bake in open lots all day and turn into ovens by the time people board. A reflective coating on the roof sends sunlight back, so passengers step into a cooler cabin and the air conditioning works far less to catch up.",
       image:
         "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=1400&q=80",
     },
