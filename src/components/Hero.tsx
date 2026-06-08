@@ -15,7 +15,7 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover"
+        className="object-cover object-top"
       />
       {/* Flat scrim for text legibility (no gradients) */}
       <div className="absolute inset-0 bg-pine-deep/55" aria-hidden />

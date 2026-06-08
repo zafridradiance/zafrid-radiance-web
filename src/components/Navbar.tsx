@@ -36,7 +36,11 @@ export default function Navbar() {
           className="group flex items-center gap-3"
           aria-label={`${site.name} home`}
         >
-          <span className="font-serif text-xl tracking-tight text-ink">
+          <span
+            className={`font-serif text-xl tracking-tight transition-colors ${
+              scrolled ? "text-ink" : "text-parchment"
+            }`}
+          >
             {site.name}
           </span>
         </a>
@@ -47,7 +51,11 @@ export default function Navbar() {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="relative text-sm font-medium text-ink-soft transition-colors hover:text-ink after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-glacier after:transition-all after:duration-300 hover:after:w-full"
+                className={`relative text-sm font-medium transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-glacier after:transition-all after:duration-300 hover:after:w-full ${
+                  scrolled
+                    ? "text-ink-soft hover:text-ink"
+                    : "text-parchment/85 hover:text-parchment"
+                }`}
               >
                 {item.label}
               </a>
@@ -64,19 +72,19 @@ export default function Navbar() {
           aria-expanded={open}
         >
           <span
-            className={`h-px w-6 bg-ink transition-all duration-300 ${
-              open ? "translate-y-[7px] rotate-45" : ""
-            }`}
+            className={`h-px w-6 transition-all duration-300 ${
+              open || scrolled ? "bg-ink" : "bg-parchment"
+            } ${open ? "translate-y-[7px] rotate-45" : ""}`}
           />
           <span
-            className={`h-px w-6 bg-ink transition-all duration-300 ${
-              open ? "opacity-0" : ""
-            }`}
+            className={`h-px w-6 transition-all duration-300 ${
+              scrolled ? "bg-ink" : "bg-parchment"
+            } ${open ? "opacity-0" : ""}`}
           />
           <span
-            className={`h-px w-6 bg-ink transition-all duration-300 ${
-              open ? "-translate-y-[7px] -rotate-45" : ""
-            }`}
+            className={`h-px w-6 transition-all duration-300 ${
+              open || scrolled ? "bg-ink" : "bg-parchment"
+            } ${open ? "-translate-y-[7px] -rotate-45" : ""}`}
           />
         </button>
       </nav>
