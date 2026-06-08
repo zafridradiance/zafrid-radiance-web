@@ -31,7 +31,7 @@ export const nav = [
 export const hero = {
   title: "Radiative cooling for Qatar’s rooftops.",
   subtitle:
-    "A service-first roofing system engineered to reflect sunlight, emit heat through the sky, and make sustainable cooling infrastructure real in Qatar.",
+    "Cooler surfaces. Lower energy. A planet that doesn't have to pay for comfort.",
   primaryCta: { label: "The Science", href: "#approach" },
   secondaryCta: { label: "Applications", href: "#work" },
   image:
