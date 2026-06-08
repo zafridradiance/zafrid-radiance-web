@@ -52,8 +52,8 @@ export const problem = {
   lead: "From May to October, Qatar absorbs intense solar radiation. Buildings soak up that heat and release it back, warming the surroundings until the entire city stays hot — day and night.",
   points: [
     {
-      title: "The city absorbs the heat",
-      body: "For six months a year, May through October, solar radiation pours onto Qatar. Buildings absorb this heat and radiate it back into their surroundings, turning whole neighbourhoods — and the city itself — into a heat trap.",
+      title: "Rooftops that trap heat",
+      body: "Dark, exposed roofs and façades hold onto solar energy instead of shedding it, climbing far hotter than the surrounding air. Long after sunset they keep radiating that heat indoors and out, so neighbourhoods never fully cool down.",
     },
     {
       title: "Cooling load and rising bills",
@@ -70,7 +70,7 @@ export const problem = {
 export const solution = {
   eyebrow: "The Science",
   title: "Passive roof cooling designed for Qatar.",
-  lead: "Zafrid Radiance uses advanced radiative materials to reflect sunlight and send heat skyward through the atmosphere’s transparent thermal window.",
+  lead: "Our coating combines two physical effects that work continuously, without electricity or moving parts — turning an ordinary roof into a surface that stays cooler on its own.",
   image:
     "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80",
   pillars: [
@@ -163,8 +163,8 @@ export const about = {
   title: "Qatar-born cooling infrastructure for the built environment.",
   lead: "Based in Qatar, we are developing passive rooftop cooling services that support sustainable resilience, cleaner grids, and local jobs.",
   body: [
-    "Zafrid Radiance combines advanced material science with a service-led delivery model, positioning rooftop cooling as infrastructure rather than a one-off coating.",
-    "Our approach is intentionally local: formulation, testing, and future manufacturing are designed to keep value and expertise in Qatar.",
+    "We treat rooftop cooling as infrastructure, not a one-off coating — delivered, monitored, and maintained as an ongoing service so performance holds up year after year.",
+    "We are building for the long term — partnering with building owners, developers, and public bodies to make cooler, lower-demand surfaces a standard part of how Qatar builds.",
   ],
   image:
     "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80",
@@ -193,7 +193,7 @@ export const contact = {
 
 /* ---- Footer ------------------------------------------------------------ */
 export const footer = {
-  blurb: "Radiative cooling for Qatar's rooftops.",
+  blurb: "Passive cooling infrastructure, engineered in Qatar for the way Qatar lives and builds.",
   columns: [
     {
       heading: "Explore",
