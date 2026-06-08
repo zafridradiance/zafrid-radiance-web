@@ -65,30 +65,14 @@ export default function Work() {
                   key={step.label}
                   className="flex flex-col items-stretch gap-3 lg:flex-1 lg:flex-row lg:items-center"
                 >
-                  <div
-                    className={`flex-1 rounded-md border p-5 text-center transition-colors ${
-                      last
-                        ? "border-pine bg-pine text-parchment"
-                        : "border-line bg-parchment text-ink"
-                    }`}
-                  >
-                    <span
-                      className={`figure text-xs ${
-                        last ? "text-frost" : "text-glacier"
-                      }`}
-                    >
+                  <div className="flex-1 rounded-md border border-line bg-parchment p-5 text-center text-ink">
+                    <span className="figure text-xs text-glacier">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <p className="mt-1.5 font-serif text-lg leading-tight">
                       {step.label}
                     </p>
-                    <p
-                      className={`mt-1 text-xs ${
-                        last ? "text-frost/80" : "text-muted"
-                      }`}
-                    >
-                      {step.caption}
-                    </p>
+                    <p className="mt-1 text-xs text-muted">{step.caption}</p>
                   </div>
 
                   {!last && (
