@@ -8,14 +8,22 @@ export default function Hero() {
       id="top"
       className="relative flex min-h-screen items-center overflow-hidden bg-pine-deep"
     >
-      {/* Full-bleed Doha skyline */}
+      {/* Full-bleed Doha skyline — portrait crop on mobile, wide on larger screens */}
+      <Image
+        src="/hero-mobile.jpg"
+        alt="The Doha skyline across the bay"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center sm:hidden"
+      />
       <Image
         src="/hero.jpg"
         alt="Aerial view of the Doha skyline across the bay"
         fill
         priority
         sizes="100vw"
-        className="object-cover object-top"
+        className="hidden object-cover object-top sm:block"
       />
       {/* Flat scrim for text legibility (no gradients) */}
       <div className="absolute inset-0 bg-pine-deep/55" aria-hidden />
