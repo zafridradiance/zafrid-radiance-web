@@ -31,11 +31,6 @@ export default function Work() {
               />
               <div className="scrim absolute inset-0" aria-hidden />
 
-              {/* "Thermal view" cue appears on hover */}
-              <span className="eyebrow absolute right-4 top-4 rounded-full bg-pine-deep/60 px-3 py-1 text-[0.65rem] text-frost opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                Thermal view
-              </span>
-
               {/* Content */}
               <div className="relative flex h-full flex-col justify-end p-7">
                 <span className="eyebrow text-frost">{project.category}</span>
