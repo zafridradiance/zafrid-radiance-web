@@ -95,36 +95,31 @@ export const work = {
       title: "Public transportation",
       category: "Vehicles",
       body: "Buses and transit vehicles bake in open lots all day and turn into ovens by the time people board. A reflective coating on the roof sends sunlight back, so passengers step into a cooler cabin and the air conditioning works far less to catch up.",
-      image:
-        "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=1400&q=80",
+      image: "/app-transport.jpg",
     },
     {
       title: "Rooftop water tanks",
       category: "Industrial & residential",
       body: "Across buildings and industrial areas, exposed tanks soak up six months of heat until the water inside runs scalding, hot enough to burn at the pump. Coating them reflects that heat and keeps stored water cooler and safer.",
-      image:
-        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=80",
+      image: "/app-tanks.jpg",
     },
     {
       title: "Building roofs",
       category: "Any building",
       body: "Hot roofs drive heat straight into the floors below, forcing air conditioners to run harder, pushing bills up and wearing the system down over time. The coating reflects that radiation before it ever gets inside.",
-      image:
-        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
+      image: "/app-roofs.jpg",
     },
     {
       title: "Shelters & sheds",
       category: "Public & outdoor",
       body: "Parking shelters, park canopies, and car sheds collect heat all day. A reflective layer keeps these everyday shaded spaces noticeably cooler for the people using them.",
-      image:
-        "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80",
+      image: "/app-shelters.jpg",
     },
     {
       title: "Metro stations & bus stops",
       category: "Transit stops",
       body: "Station canopies and bus-stop shelters sit fully exposed while people wait in the heat. Coating their roofs reflects the sun, keeping these waiting spaces cooler and more bearable through the day.",
-      image:
-        "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1400&q=80",
+      image: "/app-stations.jpg",
     },
   ],
   scale: {
