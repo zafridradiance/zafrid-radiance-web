@@ -198,7 +198,7 @@ export const work = {
     eyebrow: "How it scales",
     title: "From a single surface to a cooler nation.",
     steps: [
-      { label: "Buildings, shelters & buses", caption: "Individual surfaces" },
+      { label: "Buildings & buses", caption: "Individual surfaces" },
       { label: "Whole communities", caption: "Compounds & districts" },
       { label: "Cities", caption: "Urban-scale deployment" },
       { label: "A cool Qatar", caption: "National impact" },
