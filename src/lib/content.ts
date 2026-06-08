@@ -1,0 +1,216 @@
+/* ============================================================================
+   Zafrid Radiance — site content
+   This is the single source of truth for all copy and imagery on the site.
+   Edit the text/links/images here; components render whatever lives below.
+============================================================================ */
+
+export const site = {
+  name: "Zafrid Radiance",
+  tagline: "Radiative cooling for Qatar's rooftops.",
+  description:
+    "Zafrid Radiance is a Qatar-based cooling infrastructure venture building radiative roofing systems for National Vision 2030. We combine advanced materials science, local manufacturing, and Cooling-as-a-Service to reduce rooftop heat and ease grid demand.",
+  url: "https://zafridradiance.org",
+  email: "zafridradiance@gmail.com",
+  location: "Al Wakrah, Qatar",
+  social: [
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/zafridradiance" },
+    { label: "Instagram", href: "https://www.instagram.com/zafridradiance" },
+    { label: "X", href: "https://x.com/zafridradiance" },
+  ],
+};
+
+/* Navigation — anchors map to section ids on the single page. */
+export const nav = [
+  { label: "Heat Challenge", href: "#vision" },
+  { label: "The Science", href: "#approach" },
+  { label: "Impact", href: "#impact" },
+  { label: "Applications", href: "#work" },
+  { label: "About", href: "#about" },
+  { label: "Contact", href: "#contact" },
+];
+
+/* ---- Hero -------------------------------------------------------------- */
+export const hero = {
+  eyebrow: "Cooling infrastructure for Qatar National Vision 2030",
+  title: "Radiative cooling for Qatar’s rooftops.",
+  subtitle:
+    "A service-first roofing system engineered to reflect sunlight, emit heat through the sky, and make sustainable cooling infrastructure real in Qatar.",
+  primaryCta: { label: "The Science", href: "#approach" },
+  secondaryCta: { label: "Applications", href: "#work" },
+  image:
+    "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2400&q=80",
+  stats: [
+    { value: "10–15°C", label: "Target roof cooling" },
+    { value: "Cooling-as-a-Service", label: "Infrastructure-first model" },
+    { value: "Al Wakrah", label: "Qatar-based development" },
+  ],
+};
+
+/* ---- Problem / The Challenge ------------------------------------------ */
+export const problem = {
+  eyebrow: "The Heat Challenge",
+  title: "Qatar’s rooftops are heating buildings, demand, and the grid.",
+  lead: "Intense solar exposure turns ordinary roofs into heat sources, increasing air-conditioning load and amplifying peak power demand across the country.",
+  points: [
+    {
+      title: "Baking rooftops",
+      body: "Solar radiation and dark roof surfaces trap heat, making rooftops far hotter than the air above them and driving interior cooling needs higher.",
+    },
+    {
+      title: "Rising grid pressure",
+      body: "Every extra degree of roof heat adds to air-conditioning demand, straining Qatar’s power network during the hottest months.",
+    },
+    {
+      title: "A missing system",
+      body: "Cooling has too often been treated as a commodity instead of built environment infrastructure designed for Qatar’s climate and Vision 2030 goals.",
+    },
+  ],
+};
+
+/* ---- Solution / Our Approach ------------------------------------------ */
+export const solution = {
+  eyebrow: "The Science",
+  title: "Passive roof cooling designed for Qatar.",
+  lead: "Zafrid Radiance uses advanced radiative materials to reflect sunlight and send heat skyward through the atmosphere’s transparent thermal window.",
+  image:
+    "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80",
+  pillars: [
+    {
+      number: "01",
+      title: "Reflect the sun",
+      body: "A high-reflectance coating keeps solar energy from converting into rooftop heat, reducing the energy pushed into buildings below.",
+    },
+    {
+      number: "02",
+      title: "Radiate to the sky",
+      body: "The roof emits thermal energy through the 8–13µm atmospheric window, cooling surfaces without consuming electricity.",
+    },
+    {
+      number: "03",
+      title: "Scale as infrastructure",
+      body: "Delivered as Cooling-as-a-Service, the system is intended for rooftops, water tanks, and vehicle surfaces across Qatar.",
+    },
+    {
+      number: "04",
+      title: "Align with Vision 2030",
+      body: "Our model is built to reduce grid load, support sustainable construction, and generate local manufacturing and service jobs.",
+    },
+  ],
+};
+
+/* ---- Impact ------------------------------------------------------------ */
+export const impact = {
+  eyebrow: "The Vision",
+  title: "A national cooling strategy for Qatar.",
+  lead: "We are framing rooftop radiative cooling as the next layer of sustainable built infrastructure, with measurable goals and Qatar-first delivery.",
+  metrics: [
+    { value: "10–15°C", label: "Target roof temperature drop" },
+    { value: "Lower peak", label: "Grid-load reduction" },
+    { value: "Vision 2030", label: "Sustainability alignment" },
+    { value: "Local jobs", label: "Qatar-based manufacturing" },
+  ],
+  highlights: [
+    {
+      title: "Goals before claims",
+      body: "Performance is presented as our first targets and validation objectives, not as already established results.",
+    },
+    {
+      title: "Built for Qatar",
+      body: "From Al Wakrah formulation to local manufacturing and testing, our work is designed for the region’s climate, economy, and long-term vision.",
+    },
+  ],
+};
+
+/* ---- Work / Applications -------------------------------------------- */
+export const work = {
+  eyebrow: "Applications",
+  title: "Where cooling infrastructure can make the biggest difference.",
+  lead: "We are focused on roofs and surfaces that shape Qatar’s built environment, starting with the places that matter most for grid demand and resilience.",
+  projects: [
+    {
+      title: "Commercial and government roofs",
+      category: "Primary deployment",
+      body: "Large exposed roofs are the first priority, where cooler surfaces can have the greatest impact on energy use and peak demand.",
+      image:
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
+    },
+    {
+      title: "Residential compounds",
+      category: "Community scale",
+      body: "Multi-home compounds and regional developments can benefit from managed cooling infrastructure across many buildings.",
+      image:
+        "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80",
+    },
+    {
+      title: "Water tanks and service structures",
+      category: "Supporting assets",
+      body: "Coating water tanks, pump houses, and other exposed surfaces helps lower ambient heat and protect critical infrastructure.",
+      image:
+        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=80",
+    },
+    {
+      title: "How we prove it",
+      category: "Validation",
+      body: "We are planning side-by-side thermal testing in real Qatar conditions to demonstrate how radiative cooling performs on representative roofs.",
+      image:
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
+    },
+  ],
+};
+
+/* ---- About ------------------------------------------------------------- */
+export const about = {
+  eyebrow: "About",
+  title: "Qatar-born cooling infrastructure for the built environment.",
+  lead: "Based in Al Wakrah, we are developing passive rooftop cooling services that support sustainable resilience, cleaner grids, and local jobs.",
+  body: [
+    "Zafrid Radiance combines advanced material science with a service-led delivery model, positioning rooftop cooling as infrastructure rather than a one-off coating.",
+    "Our approach is intentionally local: formulation, testing, and future manufacturing are designed to keep value and expertise in Qatar.",
+  ],
+  image:
+    "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80",
+  values: [
+    {
+      title: "Qatar-first",
+      body: "Designed for local climate, local customers, and local supply chains.",
+    },
+    {
+      title: "Service-led",
+      body: "Cooling-as-a-Service makes deployment, maintenance, and long-term resilience easier.",
+    },
+    {
+      title: "Scientific",
+      body: "We prioritize rigorous validation and clear goals over unverified performance claims.",
+    },
+  ],
+};
+
+/* ---- Contact ----------------------------------------------------------- */
+export const contact = {
+  eyebrow: "Get in Touch",
+  title: "Ready to talk about cooling infrastructure.",
+  lead: "For partnerships, research inquiries, or early deployment conversations, connect with us in Qatar.",
+};
+
+/* ---- Footer ------------------------------------------------------------ */
+export const footer = {
+  blurb: "Radiative cooling for Qatar's rooftops.",
+  columns: [
+    {
+      heading: "Explore",
+      links: [
+        { label: "Heat Challenge", href: "#vision" },
+        { label: "The Science", href: "#approach" },
+        { label: "About", href: "#about" },
+      ],
+    },
+    {
+      heading: "Connect",
+      links: [
+        { label: "Applications", href: "#work" },
+        { label: "Impact", href: "#impact" },
+        { label: "Contact", href: "#contact" },
+      ],
+    },
+  ],
+};

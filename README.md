@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zafrid Radiance — Website
 
-## Getting Started
+A premium, institutional single-page site (Qatar Foundation–style) for **Zafrid Radiance**,
+built with **Next.js 16 (App Router)**, **TypeScript**, and **Tailwind CSS v4**.
 
-First, run the development server:
+## Sections
+
+Hero → The Challenge (Vision) → Our Approach → Impact → Our Work → About → Contact → Footer.
+
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install      # already done by the scaffold
+npm run dev      # start dev server → http://localhost:3000
+npm run build    # production build
+npm start        # serve the production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Editing content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+All copy, links, stats, and image URLs live in a single file:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> **`src/lib/content.ts`**
 
-## Learn More
+Edit text there and the whole site updates — no component changes needed.
+Replace the Unsplash placeholder image URLs with your own assets (drop files in
+`public/` and reference them as `/your-image.jpg`).
 
-To learn more about Next.js, take a look at the following resources:
+## Design tokens
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Colors and fonts are defined as Tailwind v4 theme tokens in
+**`src/app/globals.css`** (`@theme { ... }`). Adjust the palette (`--color-ink`,
+`--color-gold`, `--color-ivory`, …) in one place to re-skin the site.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Structure
 
-## Deploy on Vercel
+```
+src/
+  app/
+    layout.tsx        # fonts (Cormorant + Inter), metadata
+    page.tsx          # composes all sections
+    globals.css       # design tokens, utilities, animations
+  components/          # Hero, Problem, Solution, Impact, Work, About, Contact, Footer
+                       # + Navbar, Reveal (scroll animation), SectionHeading
+  lib/
+    content.ts         # ← all editable content
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy to Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push this `web/` folder to a Git repository (GitHub/GitLab/Bitbucket).
+2. Go to [vercel.com/new](https://vercel.com/new) and import the repo.
+3. Set the **Root Directory** to `web` (if the repo root is the project folder).
+4. Framework preset auto-detects **Next.js** — no extra config needed. Deploy.
+
+Or via CLI:
+
+```bash
+npm i -g vercel
+vercel            # preview deploy
+vercel --prod     # production deploy
+```
+
+## Notes
+
+- The contact form is a front-end demo. Wire it to an email service
+  (e.g. Resend, Formspree) or a Server Action to receive real submissions.
+- Animations respect `prefers-reduced-motion`.
