@@ -119,6 +119,13 @@ export const work = {
       image:
         "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80",
     },
+    {
+      title: "Metro stations & bus stops",
+      category: "Transit stops",
+      body: "Station canopies and bus-stop shelters sit fully exposed while people wait in the heat. Coating their roofs reflects the sun, keeping these waiting spaces cooler and more bearable through the day.",
+      image:
+        "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1400&q=80",
+    },
   ],
   scale: {
     eyebrow: "How it scales",
