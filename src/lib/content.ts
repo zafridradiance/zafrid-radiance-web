@@ -102,16 +102,6 @@ export const impact = {
     { value: "Lower peak", label: "Grid-load reduction" },
     { value: "Vision 2030", label: "Sustainability alignment" },
   ],
-  highlights: [
-    {
-      title: "Goals before claims",
-      body: "Performance is presented as our first targets and validation objectives, not as already established results.",
-    },
-    {
-      title: "Built for Qatar",
-      body: "From formulation to on-site testing, our work is designed for the region’s climate, economy, and long-term vision.",
-    },
-  ],
 };
 
 /* ---- Work / Applications -------------------------------------------- */

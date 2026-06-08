@@ -61,30 +61,6 @@ export default function Impact() {
             </p>
           </div>
         </Reveal>
-
-        {/* Highlights */}
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
-          {impact.highlights.map((h, i) => (
-            <Reveal
-              key={h.title}
-              delay={i * 120}
-              className="relative overflow-hidden rounded-md bg-pine p-8 text-parchment lg:p-10"
-            >
-              <span
-                className="figure absolute -right-4 -top-6 text-8xl text-frost/10"
-                aria-hidden
-              >
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h3 className="relative font-serif text-2xl text-parchment">
-                {h.title}
-              </h3>
-              <p className="relative mt-3 leading-relaxed text-frost/80">
-                {h.body}
-              </p>
-            </Reveal>
-          ))}
-        </div>
       </div>
     </section>
   );
