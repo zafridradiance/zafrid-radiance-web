@@ -25,12 +25,6 @@ export default function Hero() {
 
       <div className="relative mx-auto w-full max-w-7xl px-6 pt-32 pb-24 lg:px-10">
         <div className="max-w-3xl">
-          <p
-            className="eyebrow animate-fade-up text-gold-light"
-            style={{ animationDelay: "0.1s" }}
-          >
-            {hero.eyebrow}
-          </p>
           <h1
             className="animate-fade-up mt-6 font-serif text-5xl leading-[1.05] text-ivory sm:text-6xl lg:text-7xl"
             style={{ animationDelay: "0.25s" }}

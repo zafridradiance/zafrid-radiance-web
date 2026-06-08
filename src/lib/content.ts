@@ -31,7 +31,6 @@ export const nav = [
 
 /* ---- Hero -------------------------------------------------------------- */
 export const hero = {
-  eyebrow: "Cooling infrastructure for Qatar National Vision 2030",
   title: "Radiative cooling for Qatar’s rooftops.",
   subtitle:
     "A service-first roofing system engineered to reflect sunlight, emit heat through the sky, and make sustainable cooling infrastructure real in Qatar.",
