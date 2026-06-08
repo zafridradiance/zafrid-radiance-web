@@ -22,7 +22,7 @@ export const site = {
 /* Navigation — anchors map to section ids on the single page. */
 export const nav = [
   { label: "The Issue", href: "#vision" },
-  { label: "The Science", href: "#approach" },
+  { label: "Solution", href: "#approach" },
   { label: "Impact", href: "#impact" },
   { label: "Applications", href: "#work" },
   { label: "About", href: "#about" },
@@ -49,7 +49,7 @@ export const hero = {
 export const problem = {
   eyebrow: "The Issue",
   title: "Six months of relentless heat, trapped in the city.",
-  lead: "From May to October, Qatar absorbs intense solar radiation. Buildings soak up that heat and release it back, warming the surroundings until the entire city stays hot — day and night.",
+  lead: "From May to October, Qatar absorbs intense solar radiation. Buildings soak up that heat and release it back, warming the surroundings until the entire city stays hot, day and night.",
   points: [
     {
       title: "Rooftops that trap heat",
@@ -68,31 +68,26 @@ export const problem = {
 
 /* ---- Solution / Our Approach ------------------------------------------ */
 export const solution = {
-  eyebrow: "The Science",
-  title: "Passive roof cooling designed for Qatar.",
-  lead: "Our coating combines two physical effects that work continuously, without electricity or moving parts — turning an ordinary roof into a surface that stays cooler on its own.",
+  eyebrow: "Solution",
+  title: "Passive roof cooling.",
+  lead: "Our coating combines two physical effects that work continuously, without electricity or moving parts, turning an ordinary roof into a surface that stays cooler on its own.",
   image:
     "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80",
   pillars: [
     {
       number: "01",
       title: "Reflect the sun",
-      body: "A high-reflectance coating keeps solar energy from converting into rooftop heat, reducing the energy pushed into buildings below.",
+      body: "A high-reflectance paint keeps solar energy from converting into rooftop heat.",
     },
     {
       number: "02",
       title: "Radiate to the sky",
-      body: "The roof emits thermal energy through the 8–13µm atmospheric window, cooling surfaces without consuming electricity.",
+      body: "The paint reflects the heat back out to the atmosphere.",
     },
     {
       number: "03",
       title: "Scale as infrastructure",
-      body: "Delivered as Cooling-as-a-Service, the system is intended for rooftops, water tanks, and vehicle surfaces across Qatar.",
-    },
-    {
-      number: "04",
-      title: "Align with Vision 2030",
-      body: "Our model is built to reduce grid load and support sustainable construction in line with the country’s long-term goals.",
+      body: "The system is built for rooftops, water tanks, vehicles, and school buses, as well as schools, offices, and industrial buildings.",
     },
   ],
 };
@@ -162,8 +157,8 @@ export const about = {
   title: "Qatar-born cooling infrastructure for the built environment.",
   lead: "Based in Qatar, we are developing passive rooftop cooling services that support sustainable resilience and cleaner grids.",
   body: [
-    "We treat rooftop cooling as infrastructure, not a one-off coating — delivered, monitored, and maintained as an ongoing service so performance holds up year after year.",
-    "We are building for the long term — partnering with building owners, developers, and public bodies to make cooler, lower-demand surfaces a standard part of how Qatar builds.",
+    "We treat rooftop cooling as infrastructure, not a one-off coating, delivered, monitored, and maintained as an ongoing service so performance holds up year after year.",
+    "We are building for the long term, partnering with building owners, developers, and public bodies to make cooler, lower-demand surfaces a standard part of how Qatar builds.",
   ],
   image:
     "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80",
@@ -198,7 +193,7 @@ export const footer = {
       heading: "Explore",
       links: [
         { label: "The Issue", href: "#vision" },
-        { label: "The Science", href: "#approach" },
+        { label: "Solution", href: "#approach" },
         { label: "About", href: "#about" },
       ],
     },
