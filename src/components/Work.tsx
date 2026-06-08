@@ -1,8 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import { work } from "@/lib/content";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
+const VISIBLE = 5;
+
 export default function Work() {
+  const [showAll, setShowAll] = useState(false);
+  const visible = showAll ? work.projects : work.projects.slice(0, VISIBLE);
+  const hidden = work.projects.length - VISIBLE;
+
   return (
     <section id="work" className="relative bg-linen py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -13,7 +22,7 @@ export default function Work() {
         />
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {work.projects.map((project, i) => (
+          {visible.map((project, i) => (
             <Reveal
               key={project.title}
               delay={(i % 3) * 110}
@@ -21,14 +30,16 @@ export default function Work() {
               className="group relative h-80 overflow-hidden rounded-md border border-line bg-pine"
             >
               {/* Thermal-reveal image: warm at rest, cools to blue on hover */}
-              <div
-                className="absolute inset-0 scale-100 bg-cover bg-center transition-all duration-[1.1s] ease-out group-hover:scale-105 group-hover:hue-rotate-[150deg] group-hover:saturate-150"
-                style={{
-                  backgroundImage: `url(${project.image})`,
-                  filter: "sepia(0.35) saturate(1.1)",
-                }}
-                aria-hidden
-              />
+              {project.image && (
+                <div
+                  className="absolute inset-0 scale-100 bg-cover bg-center transition-all duration-[1.1s] ease-out group-hover:scale-105 group-hover:hue-rotate-[150deg] group-hover:saturate-150"
+                  style={{
+                    backgroundImage: `url(${project.image})`,
+                    filter: "sepia(0.35) saturate(1.1)",
+                  }}
+                  aria-hidden
+                />
+              )}
               <div className="scrim absolute inset-0" aria-hidden />
 
               {/* Content */}
@@ -47,6 +58,18 @@ export default function Work() {
             </Reveal>
           ))}
         </div>
+
+        {!showAll && hidden > 0 && (
+          <div className="mt-10 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll(true)}
+              className="rounded-sm border border-line-strong bg-linen px-7 py-3.5 text-sm font-semibold text-ink transition-colors hover:bg-ink/[0.06]"
+            >
+              Load more
+            </button>
+          </div>
+        )}
 
         {/* Scaling flow: single surface -> cooler nation */}
         <Reveal className="mt-16">
