@@ -26,8 +26,8 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-ink-deep/90 backdrop-blur-md shadow-[0_1px_0_0_rgba(194,160,76,0.25)]"
-          : "bg-transparent"
+          ? "border-b border-line bg-parchment/90 backdrop-blur-md"
+          : "border-b border-transparent bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
@@ -36,10 +36,8 @@ export default function Navbar() {
           className="group flex items-center gap-3"
           aria-label={`${site.name} home`}
         >
-          <span className="grid h-9 w-9 place-items-center rounded-full border border-gold/60">
-            <span className="h-2 w-2 rounded-full bg-gold transition-transform duration-500 group-hover:scale-150" />
-          </span>
-          <span className="font-serif text-xl tracking-wide text-ivory">
+          <Sunburst className="h-7 w-7 text-glacier transition-transform duration-500 group-hover:rotate-45" />
+          <span className="font-serif text-xl tracking-tight text-ink">
             {site.name}
           </span>
         </a>
@@ -50,7 +48,7 @@ export default function Navbar() {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="relative text-sm font-medium text-ivory/80 transition-colors hover:text-ivory after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-sm font-medium text-ink-soft transition-colors hover:text-ink after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-glacier after:transition-all after:duration-300 hover:after:w-full"
               >
                 {item.label}
               </a>
@@ -59,9 +57,9 @@ export default function Navbar() {
           <li>
             <a
               href="#contact"
-              className="rounded-full border border-gold/70 px-5 py-2 text-sm font-medium text-gold-light transition-all duration-300 hover:bg-gold hover:text-ink-deep"
+              className="rounded-sm bg-terracotta px-5 py-2 text-sm font-semibold text-parchment transition-colors duration-300 hover:bg-terracotta-hover"
             >
-              Partner With Us
+              Request Assessment
             </a>
           </li>
         </ul>
@@ -75,17 +73,17 @@ export default function Navbar() {
           aria-expanded={open}
         >
           <span
-            className={`h-px w-6 bg-ivory transition-all duration-300 ${
+            className={`h-px w-6 bg-ink transition-all duration-300 ${
               open ? "translate-y-[7px] rotate-45" : ""
             }`}
           />
           <span
-            className={`h-px w-6 bg-ivory transition-all duration-300 ${
+            className={`h-px w-6 bg-ink transition-all duration-300 ${
               open ? "opacity-0" : ""
             }`}
           />
           <span
-            className={`h-px w-6 bg-ivory transition-all duration-300 ${
+            className={`h-px w-6 bg-ink transition-all duration-300 ${
               open ? "-translate-y-[7px] -rotate-45" : ""
             }`}
           />
@@ -94,7 +92,7 @@ export default function Navbar() {
 
       {/* Mobile overlay menu */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-ink-deep transition-all duration-500 lg:hidden ${
+        className={`fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-parchment transition-all duration-500 lg:hidden ${
           open
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
@@ -105,7 +103,7 @@ export default function Navbar() {
             key={item.href}
             href={item.href}
             onClick={() => setOpen(false)}
-            className="font-serif text-3xl text-ivory/90 transition-colors hover:text-gold-light"
+            className="font-serif text-3xl text-ink transition-colors hover:text-glacier"
           >
             {item.label}
           </a>
@@ -113,11 +111,37 @@ export default function Navbar() {
         <a
           href="#contact"
           onClick={() => setOpen(false)}
-          className="mt-4 rounded-full border border-gold/70 px-7 py-3 text-base text-gold-light"
+          className="mt-4 rounded-sm bg-terracotta px-7 py-3 text-base font-semibold text-parchment"
         >
-          Partner With Us
+          Request Assessment
         </a>
       </div>
     </header>
+  );
+}
+
+/** Minimal engraved-style sunburst brand ornament. */
+function Sunburst({ className = "" }: { className?: string }) {
+  const rays = Array.from({ length: 8 });
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      className={className}
+      aria-hidden
+    >
+      <circle cx="12" cy="12" r="4" />
+      {rays.map((_, i) => {
+        const a = (i * Math.PI) / 4;
+        const x1 = 12 + Math.cos(a) * 7;
+        const y1 = 12 + Math.sin(a) * 7;
+        const x2 = 12 + Math.cos(a) * 9.5;
+        const y2 = 12 + Math.sin(a) * 9.5;
+        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />;
+      })}
+    </svg>
   );
 }

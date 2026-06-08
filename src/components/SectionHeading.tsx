@@ -27,8 +27,8 @@ export default function SectionHeading({
     >
       <Reveal>
         <span
-          className={`eyebrow ${isDark ? "text-gold-light" : "text-gold-deep"} ${
-            isCenter ? "" : "gold-rule"
+          className={`eyebrow ${isDark ? "text-frost" : "text-glacier"} ${
+            isCenter ? "" : "brand-rule"
           } inline-block`}
         >
           {eyebrow}
@@ -36,8 +36,8 @@ export default function SectionHeading({
       </Reveal>
       <Reveal delay={80}>
         <h2
-          className={`mt-5 font-serif text-4xl leading-[1.1] sm:text-5xl ${
-            isDark ? "text-ivory" : "text-ink"
+          className={`mt-5 font-serif text-4xl leading-[1.1] tracking-[-0.015em] sm:text-5xl ${
+            isDark ? "text-parchment" : "text-ink"
           }`}
         >
           {title}
@@ -47,7 +47,7 @@ export default function SectionHeading({
         <Reveal delay={160}>
           <p
             className={`mt-6 text-lg leading-relaxed ${
-              isDark ? "text-mist" : "text-stone"
+              isDark ? "text-frost/80" : "text-muted"
             }`}
           >
             {lead}

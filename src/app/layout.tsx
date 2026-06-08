@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist } from "next/font/google";
+import { Fraunces, Geist, Spline_Sans_Mono } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/content";
 
@@ -13,6 +13,13 @@ const fraunces = Fraunces({
 const geist = Geist({
   variable: "--font-sans-brand",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const splineMono = Spline_Sans_Mono({
+  variable: "--font-mono-brand",
+  subsets: ["latin"],
+  weight: ["400", "500"],
   display: "swap",
 });
 
@@ -54,9 +61,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${geist.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${geist.variable} ${splineMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-ivory text-ink">
+      <body className="min-h-full flex flex-col bg-parchment text-ink">
         {children}
       </body>
     </html>

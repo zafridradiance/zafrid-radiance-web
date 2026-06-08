@@ -6,19 +6,17 @@ export default function Solution() {
   return (
     <section
       id="approach"
-      className="relative overflow-hidden bg-ink py-28 text-ivory lg:py-36"
+      className="relative overflow-hidden bg-pine py-24 text-parchment lg:py-32"
     >
-      {/* Ambient imagery */}
+      {/* Ambient imagery with flat scrim (no gradients) */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-20"
+        className="absolute inset-0 bg-cover bg-center opacity-15"
         style={{ backgroundImage: `url(${solution.image})` }}
         aria-hidden
       />
-      <div
-        className="absolute inset-0"
-        style={{ background: "rgba(10,28,46,0.88)" }}
-        aria-hidden
-      />
+      <div className="absolute inset-0 bg-pine/85" aria-hidden />
+      {/* Isotherm contour texture */}
+      <Isotherms className="absolute inset-0 text-frost/[0.07]" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
@@ -33,22 +31,48 @@ export default function Solution() {
             <Reveal
               key={pillar.number}
               delay={i * 100}
-              className="group relative rounded-2xl border border-ivory/10 bg-ivory/[0.03] p-8 backdrop-blur-sm transition-all duration-500 hover:border-gold/40 hover:bg-ivory/[0.06] lg:p-10"
+              className="group relative rounded-md border border-frost/15 bg-parchment/[0.04] p-8 transition-all duration-500 hover:border-glacier hover:bg-parchment/[0.07] lg:p-10"
             >
+              {/* Top-rule wipe on hover */}
+              <span className="absolute inset-x-0 top-0 h-px w-0 bg-glacier transition-all duration-500 group-hover:w-full" />
               <div className="flex items-baseline gap-4">
-                <span className="font-serif text-3xl text-gold">
+                <span className="figure text-2xl text-glacier">
                   {pillar.number}
                 </span>
-                <h3 className="font-serif text-2xl text-ivory">
+                <h3 className="font-serif text-2xl text-parchment">
                   {pillar.title}
                 </h3>
               </div>
-              <p className="mt-4 leading-relaxed text-mist">{pillar.body}</p>
-              <span className="mt-6 block h-px w-12 bg-gold transition-all duration-500 group-hover:w-24" />
+              <p className="mt-4 leading-relaxed text-frost/80">{pillar.body}</p>
             </Reveal>
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+/** Thin topographic contour lines as decorative scientific texture. */
+function Isotherms({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      width="100%"
+      height="100%"
+      preserveAspectRatio="none"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1"
+      aria-hidden
+    >
+      {Array.from({ length: 9 }).map((_, i) => (
+        <path
+          key={i}
+          d={`M0 ${60 + i * 70} Q 360 ${10 + i * 70}, 720 ${
+            60 + i * 70
+          } T 1440 ${60 + i * 70}`}
+        />
+      ))}
+    </svg>
   );
 }
