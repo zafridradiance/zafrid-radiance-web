@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="paper-grain relative flex min-h-screen items-center overflow-hidden bg-parchment"
+      className="paper-grain relative flex min-h-screen flex-col justify-center overflow-hidden bg-parchment"
     >
       {/* Warm-to-cool ambient field: flat color blocks, no gradients */}
       <div className="pointer-events-none absolute inset-0" aria-hidden>
@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="absolute bottom-0 right-0 h-1/3 w-1/2 bg-frost/40" />
       </div>
 
-      <div className="relative mx-auto grid w-full max-w-7xl gap-16 px-6 pt-36 pb-24 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-10">
+      <div className="relative mx-auto grid w-full max-w-7xl flex-1 items-center gap-16 px-6 pt-36 pb-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-10">
         {/* Copy */}
         <div className="max-w-2xl">
           <p
@@ -80,7 +80,7 @@ export default function Hero() {
       </div>
 
       {/* Stats band — hairline almanac grid with mono figures */}
-      <div className="absolute inset-x-0 bottom-0">
+      <div className="relative w-full pb-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="grid grid-cols-1 border-t border-line sm:grid-cols-3">
             {hero.stats.map((stat) => (

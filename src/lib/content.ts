@@ -11,7 +11,7 @@ export const site = {
     "Zafrid Radiance is a Qatar-based cooling infrastructure venture building radiative roofing systems for National Vision 2030. We combine advanced materials science, local manufacturing, and Cooling-as-a-Service to reduce rooftop heat and ease grid demand.",
   url: "https://zafridradiance.org",
   email: "zafridradiance@gmail.com",
-  location: "Al Wakrah, Qatar",
+  location: "Qatar",
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com/company/zafridradiance" },
     { label: "Instagram", href: "https://www.instagram.com/zafridradiance" },
@@ -41,7 +41,7 @@ export const hero = {
   stats: [
     { value: "10–15°C", label: "Target roof cooling" },
     { value: "Cooling-as-a-Service", label: "Infrastructure-first model" },
-    { value: "Al Wakrah", label: "Qatar-based development" },
+    { value: "Qatar", label: "Qatar-based development" },
   ],
 };
 
@@ -115,7 +115,7 @@ export const impact = {
     },
     {
       title: "Built for Qatar",
-      body: "From Al Wakrah formulation to local manufacturing and testing, our work is designed for the region’s climate, economy, and long-term vision.",
+      body: "From local formulation to manufacturing and testing, our work is designed for the region’s climate, economy, and long-term vision.",
     },
   ],
 };
@@ -161,7 +161,7 @@ export const work = {
 export const about = {
   eyebrow: "About",
   title: "Qatar-born cooling infrastructure for the built environment.",
-  lead: "Based in Al Wakrah, we are developing passive rooftop cooling services that support sustainable resilience, cleaner grids, and local jobs.",
+  lead: "Based in Qatar, we are developing passive rooftop cooling services that support sustainable resilience, cleaner grids, and local jobs.",
   body: [
     "Zafrid Radiance combines advanced material science with a service-led delivery model, positioning rooftop cooling as infrastructure rather than a one-off coating.",
     "Our approach is intentionally local: formulation, testing, and future manufacturing are designed to keep value and expertise in Qatar.",
