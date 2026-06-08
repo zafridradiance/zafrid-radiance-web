@@ -31,10 +31,8 @@ export default function Solution() {
             <Reveal
               key={pillar.number}
               delay={i * 100}
-              className="group relative rounded-md border border-frost/15 bg-parchment/[0.04] p-8 transition-all duration-500 hover:border-glacier hover:bg-parchment/[0.07] lg:p-10"
+              className="relative rounded-md border border-frost/15 bg-parchment/[0.04] p-8 lg:p-10"
             >
-              {/* Top-rule wipe on hover */}
-              <span className="absolute inset-x-0 top-0 h-px w-0 bg-glacier transition-all duration-500 group-hover:w-full" />
               <div className="flex items-baseline gap-4">
                 <span className="figure text-2xl text-glacier">
                   {pillar.number}
