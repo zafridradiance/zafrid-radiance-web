@@ -82,11 +82,6 @@ export const solution = {
       title: "Radiate to the sky",
       body: "The paint reflects the heat back out to the atmosphere.",
     },
-    {
-      number: "03",
-      title: "Scale as infrastructure",
-      body: "The system is built for rooftops, water tanks, vehicles, and school buses, as well as schools, offices, and industrial buildings.",
-    },
   ],
 };
 

@@ -26,13 +26,9 @@ export default function Solution() {
           tone="dark"
         />
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-10 sm:grid-cols-2">
           {solution.pillars.map((pillar, i) => (
-            <Reveal
-              key={pillar.number}
-              delay={i * 100}
-              className="relative rounded-md border border-frost/15 bg-parchment/[0.04] p-8 lg:p-10"
-            >
+            <Reveal key={pillar.number} delay={i * 100}>
               <div className="flex items-baseline gap-4">
                 <span className="figure text-2xl text-glacier">
                   {pillar.number}
@@ -41,7 +37,9 @@ export default function Solution() {
                   {pillar.title}
                 </h3>
               </div>
-              <p className="mt-4 leading-relaxed text-frost/80">{pillar.body}</p>
+              <p className="mt-3 max-w-md leading-relaxed text-frost/80">
+                {pillar.body}
+              </p>
             </Reveal>
           ))}
         </div>
