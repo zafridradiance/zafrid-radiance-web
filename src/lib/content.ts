@@ -23,7 +23,6 @@ export const site = {
 export const nav = [
   { label: "The Issue", href: "#vision" },
   { label: "Solution", href: "#approach" },
-  { label: "Impact", href: "#impact" },
   { label: "Applications", href: "#work" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
@@ -89,18 +88,6 @@ export const solution = {
       title: "Scale as infrastructure",
       body: "The system is built for rooftops, water tanks, vehicles, and school buses, as well as schools, offices, and industrial buildings.",
     },
-  ],
-};
-
-/* ---- Impact ------------------------------------------------------------ */
-export const impact = {
-  eyebrow: "The Vision",
-  title: "A national cooling strategy for Qatar.",
-  lead: "We are framing rooftop radiative cooling as the next layer of sustainable built infrastructure, with measurable goals and Qatar-first delivery.",
-  metrics: [
-    { value: "10–15°C", label: "Target roof temperature drop" },
-    { value: "Lower peak", label: "Grid-load reduction" },
-    { value: "Vision 2030", label: "Sustainability alignment" },
   ],
 };
 
@@ -191,7 +178,6 @@ export const footer = {
       heading: "Connect",
       links: [
         { label: "Applications", href: "#work" },
-        { label: "Impact", href: "#impact" },
         { label: "Contact", href: "#contact" },
       ],
     },
