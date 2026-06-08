@@ -18,7 +18,7 @@ export default function Impact() {
         />
 
         {/* Metrics band — almanac-style hairline grid, mono numerals */}
-        <div className="mt-16 grid grid-cols-2 gap-px overflow-hidden border border-line bg-line lg:grid-cols-4">
+        <div className="mt-16 grid overflow-hidden border border-line divide-y divide-line sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {impact.metrics.map((metric, i) => (
             <Reveal
               key={metric.label}

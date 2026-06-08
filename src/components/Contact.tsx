@@ -46,10 +46,6 @@ export default function Contact() {
                   </dd>
                 </div>
                 <div>
-                  <dt className="eyebrow text-glacier">Headquarters</dt>
-                  <dd className="mt-1 text-lg text-ink">{site.location}</dd>
-                </div>
-                <div>
                   <dt className="eyebrow text-glacier">Connect</dt>
                   <dd className="mt-2 flex gap-4">
                     {site.social.map((s) => (

@@ -8,7 +8,7 @@ export const site = {
   name: "Zafrid Radiance",
   tagline: "Radiative cooling for Qatar's rooftops.",
   description:
-    "Zafrid Radiance is a Qatar-based cooling infrastructure venture building radiative roofing systems for National Vision 2030. We combine advanced materials science, local manufacturing, and Cooling-as-a-Service to reduce rooftop heat and ease grid demand.",
+    "Zafrid Radiance is a Qatar-based cooling infrastructure venture building radiative roofing systems for National Vision 2030. We combine advanced materials science and Cooling-as-a-Service to reduce rooftop heat and ease grid demand.",
   url: "https://zafridradiance.org",
   email: "zafridradiance@gmail.com",
   location: "Qatar",
@@ -92,7 +92,7 @@ export const solution = {
     {
       number: "04",
       title: "Align with Vision 2030",
-      body: "Our model is built to reduce grid load, support sustainable construction, and generate local manufacturing and service jobs.",
+      body: "Our model is built to reduce grid load and support sustainable construction in line with the country’s long-term goals.",
     },
   ],
 };
@@ -106,7 +106,6 @@ export const impact = {
     { value: "10–15°C", label: "Target roof temperature drop" },
     { value: "Lower peak", label: "Grid-load reduction" },
     { value: "Vision 2030", label: "Sustainability alignment" },
-    { value: "Local jobs", label: "Qatar-based manufacturing" },
   ],
   highlights: [
     {
@@ -115,7 +114,7 @@ export const impact = {
     },
     {
       title: "Built for Qatar",
-      body: "From local formulation to manufacturing and testing, our work is designed for the region’s climate, economy, and long-term vision.",
+      body: "From formulation to on-site testing, our work is designed for the region’s climate, economy, and long-term vision.",
     },
   ],
 };
@@ -161,7 +160,7 @@ export const work = {
 export const about = {
   eyebrow: "About",
   title: "Qatar-born cooling infrastructure for the built environment.",
-  lead: "Based in Qatar, we are developing passive rooftop cooling services that support sustainable resilience, cleaner grids, and local jobs.",
+  lead: "Based in Qatar, we are developing passive rooftop cooling services that support sustainable resilience and cleaner grids.",
   body: [
     "We treat rooftop cooling as infrastructure, not a one-off coating — delivered, monitored, and maintained as an ongoing service so performance holds up year after year.",
     "We are building for the long term — partnering with building owners, developers, and public bodies to make cooler, lower-demand surfaces a standard part of how Qatar builds.",
