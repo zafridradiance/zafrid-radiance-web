@@ -53,14 +53,6 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href="#contact"
-              className="rounded-sm bg-terracotta px-5 py-2 text-sm font-semibold text-parchment transition-colors duration-300 hover:bg-terracotta-hover"
-            >
-              Request Assessment
-            </a>
-          </li>
         </ul>
 
         {/* Mobile toggle */}
@@ -107,13 +99,6 @@ export default function Navbar() {
             {item.label}
           </a>
         ))}
-        <a
-          href="#contact"
-          onClick={() => setOpen(false)}
-          className="mt-4 rounded-sm bg-terracotta px-7 py-3 text-base font-semibold text-parchment"
-        >
-          Request Assessment
-        </a>
       </div>
     </header>
   );

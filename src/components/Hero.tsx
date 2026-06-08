@@ -26,7 +26,7 @@ export default function Hero() {
             style={{ animationDelay: "0.6s" }}
           >
             <Button href="#contact" variant="primary">
-              Request an assessment
+              Get in touch
             </Button>
           </div>
         </div>

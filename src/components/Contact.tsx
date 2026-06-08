@@ -111,7 +111,7 @@ export default function Contact() {
                     type="submit"
                     className="group inline-flex w-full items-center justify-center gap-2 rounded-sm bg-terracotta px-7 py-3.5 text-sm font-semibold text-parchment transition-colors duration-300 hover:bg-terracotta-hover"
                   >
-                    Request an assessment
+                    Send message
                     <span className="transition-transform duration-300 group-hover:translate-x-1">
                       →
                     </span>
