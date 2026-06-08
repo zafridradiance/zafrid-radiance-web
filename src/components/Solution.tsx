@@ -16,10 +16,7 @@ export default function Solution() {
       />
       <div
         className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(180deg, var(--color-ink) 0%, rgba(10,28,46,0.85) 100%)",
-        }}
+        style={{ background: "rgba(10,28,46,0.88)" }}
         aria-hidden
       />
 
@@ -47,7 +44,7 @@ export default function Solution() {
                 </h3>
               </div>
               <p className="mt-4 leading-relaxed text-mist">{pillar.body}</p>
-              <span className="mt-6 block h-px w-12 bg-gradient-to-r from-gold to-transparent transition-all duration-500 group-hover:w-24" />
+              <span className="mt-6 block h-px w-12 bg-gold transition-all duration-500 group-hover:w-24" />
             </Reveal>
           ))}
         </div>

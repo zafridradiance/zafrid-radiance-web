@@ -28,10 +28,7 @@ export default function Work() {
               />
               <div
                 className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(180deg, rgba(5,15,26,0.1) 0%, rgba(5,15,26,0.55) 55%, rgba(5,15,26,0.92) 100%)",
-                }}
+                style={{ background: "rgba(5,15,26,0.6)" }}
                 aria-hidden
               />
 

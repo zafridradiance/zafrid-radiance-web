@@ -55,10 +55,7 @@ export default function About() {
             />
             <div
               className="absolute inset-0"
-              style={{
-                background:
-                  "linear-gradient(180deg, transparent 40%, rgba(5,15,26,0.65) 100%)",
-              }}
+              style={{ background: "rgba(5,15,26,0.35)" }}
               aria-hidden
             />
           </div>

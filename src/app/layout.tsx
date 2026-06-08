@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Fraunces, Geist } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/content";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const fraunces = Fraunces({
+  variable: "--font-serif-brand",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const geist = Geist({
+  variable: "--font-sans-brand",
   subsets: ["latin"],
   display: "swap",
 });
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${inter.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${geist.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-ivory text-ink">
         {children}

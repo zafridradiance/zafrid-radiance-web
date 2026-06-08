@@ -13,15 +13,6 @@ export default function Hero() {
         aria-hidden
       />
       <div className="absolute inset-0 cinematic-overlay" aria-hidden />
-      {/* Gold vignette accent */}
-      <div
-        className="absolute inset-0 opacity-40"
-        style={{
-          background:
-            "radial-gradient(900px 600px at 80% 20%, rgba(194,160,76,0.18), transparent 60%)",
-        }}
-        aria-hidden
-      />
 
       <div className="relative mx-auto w-full max-w-7xl px-6 pt-32 pb-24 lg:px-10">
         <div className="max-w-3xl">
