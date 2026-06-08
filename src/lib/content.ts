@@ -125,6 +125,16 @@ export const work = {
         "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
     },
   ],
+  scale: {
+    eyebrow: "How it scales",
+    title: "From a single surface to a cooler nation.",
+    steps: [
+      { label: "Buildings, shelters & buses", caption: "Individual surfaces" },
+      { label: "Whole communities", caption: "Compounds & districts" },
+      { label: "Cities", caption: "Urban-scale deployment" },
+      { label: "A cool Qatar", caption: "National impact" },
+    ],
+  },
 };
 
 /* ---- Contact ----------------------------------------------------------- */

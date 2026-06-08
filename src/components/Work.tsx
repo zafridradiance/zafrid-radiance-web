@@ -47,6 +47,64 @@ export default function Work() {
             </Reveal>
           ))}
         </div>
+
+        {/* Scaling flow: single surface -> cooler nation */}
+        <Reveal className="mt-16">
+          <p className="eyebrow brand-rule inline-block text-glacier">
+            {work.scale.eyebrow}
+          </p>
+          <h3 className="mt-4 max-w-2xl font-serif text-2xl text-ink lg:text-3xl">
+            {work.scale.title}
+          </h3>
+
+          <ol className="mt-10 flex flex-col items-stretch gap-3 lg:flex-row lg:items-center">
+            {work.scale.steps.map((step, i) => {
+              const last = i === work.scale.steps.length - 1;
+              return (
+                <li
+                  key={step.label}
+                  className="flex flex-col items-stretch gap-3 lg:flex-1 lg:flex-row lg:items-center"
+                >
+                  <div
+                    className={`flex-1 rounded-md border p-5 text-center transition-colors ${
+                      last
+                        ? "border-pine bg-pine text-parchment"
+                        : "border-line bg-parchment text-ink"
+                    }`}
+                  >
+                    <span
+                      className={`figure text-xs ${
+                        last ? "text-frost" : "text-glacier"
+                      }`}
+                    >
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <p className="mt-1.5 font-serif text-lg leading-tight">
+                      {step.label}
+                    </p>
+                    <p
+                      className={`mt-1 text-xs ${
+                        last ? "text-frost/80" : "text-muted"
+                      }`}
+                    >
+                      {step.caption}
+                    </p>
+                  </div>
+
+                  {!last && (
+                    <span
+                      className="mx-auto text-xl text-glacier lg:mx-1"
+                      aria-hidden
+                    >
+                      <span className="hidden lg:inline">→</span>
+                      <span className="lg:hidden">↓</span>
+                    </span>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+        </Reveal>
       </div>
     </section>
   );
