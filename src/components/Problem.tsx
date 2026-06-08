@@ -15,7 +15,7 @@ export default function Problem() {
           lead={problem.lead}
         />
 
-        <div className="mt-16 grid gap-px overflow-hidden border border-line bg-line md:grid-cols-3">
+        <div className="mt-16 grid divide-y divide-line overflow-hidden border border-line md:grid-cols-3 md:divide-x md:divide-y-0">
           {problem.points.map((point, i) => (
             <Reveal
               key={point.title}
