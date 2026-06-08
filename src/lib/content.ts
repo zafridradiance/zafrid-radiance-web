@@ -24,7 +24,6 @@ export const nav = [
   { label: "The Issue", href: "#vision" },
   { label: "Solution", href: "#approach" },
   { label: "Applications", href: "#work" },
-  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -128,38 +127,11 @@ export const work = {
   ],
 };
 
-/* ---- About ------------------------------------------------------------- */
-export const about = {
-  eyebrow: "About",
-  title: "Qatar-born cooling infrastructure for the built environment.",
-  lead: "Based in Qatar, we are developing passive rooftop cooling services that support sustainable resilience and cleaner grids.",
-  body: [
-    "We treat rooftop cooling as infrastructure, not a one-off coating, delivered, monitored, and maintained as an ongoing service so performance holds up year after year.",
-    "We are building for the long term, partnering with building owners, developers, and public bodies to make cooler, lower-demand surfaces a standard part of how Qatar builds.",
-  ],
-  image:
-    "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80",
-  values: [
-    {
-      title: "Qatar-first",
-      body: "Designed for local climate, local customers, and local supply chains.",
-    },
-    {
-      title: "Service-led",
-      body: "Cooling-as-a-Service makes deployment, maintenance, and long-term resilience easier.",
-    },
-    {
-      title: "Scientific",
-      body: "We prioritize rigorous validation and clear goals over unverified performance claims.",
-    },
-  ],
-};
-
 /* ---- Contact ----------------------------------------------------------- */
 export const contact = {
   eyebrow: "Get in Touch",
   title: "Ready to talk about cooling infrastructure.",
-  lead: "For partnerships, research inquiries, or early deployment conversations, connect with us in Qatar.",
+  lead: "For partnerships, research inquiries, or early deployment conversations connect below.",
 };
 
 /* ---- Footer ------------------------------------------------------------ */
@@ -171,7 +143,6 @@ export const footer = {
       links: [
         { label: "The Issue", href: "#vision" },
         { label: "Solution", href: "#approach" },
-        { label: "About", href: "#about" },
       ],
     },
     {
