@@ -6,7 +6,7 @@ export default function Solution() {
   return (
     <section
       id="approach"
-      className="relative overflow-hidden bg-pine py-24 text-parchment lg:py-32"
+      className="relative overflow-hidden bg-pine py-16 text-parchment lg:py-20"
     >
       {/* Ambient imagery with flat scrim (no gradients) */}
       <div

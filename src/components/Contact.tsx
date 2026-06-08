@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="paper-grain relative bg-parchment py-24 lg:py-32"
+      className="paper-grain relative bg-parchment py-16 lg:py-20"
     >
       <div className="mx-auto max-w-3xl px-6 lg:px-10">
         <span className="eyebrow brand-rule inline-block text-glacier">

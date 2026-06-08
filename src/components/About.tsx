@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-pine-deep py-24 text-parchment lg:py-32"
+      className="relative overflow-hidden bg-pine-deep py-16 text-parchment lg:py-20"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:px-10">
         {/* Text */}

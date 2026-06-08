@@ -6,7 +6,7 @@ export default function Problem() {
   return (
     <section
       id="vision"
-      className="paper-grain relative bg-linen py-20 lg:py-28"
+      className="paper-grain relative bg-linen py-14 lg:py-20"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <SectionHeading
