@@ -89,35 +89,35 @@ export const solution = {
 export const work = {
   eyebrow: "Applications",
   title: "Where cooling infrastructure can make the biggest difference.",
-  lead: "We are focused on roofs and surfaces that shape Qatar’s built environment, starting with the places that matter most for grid demand and resilience.",
+  lead: "We focus on every surface that takes the full force of the sun, the everyday roofs, vehicles, and structures where reflecting heat makes the biggest difference.",
   projects: [
     {
-      title: "Commercial and government roofs",
-      category: "Primary deployment",
-      body: "Large exposed roofs are the first priority, where cooler surfaces can have the greatest impact on energy use and peak demand.",
+      title: "School buses",
+      category: "Vehicles",
+      body: "Parked in open lots all day, buses turn into ovens by home time. A reflective coating on the roof sends sunlight back, so children step into a cooler cabin and the air conditioning works far less to catch up.",
       image:
-        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=1400&q=80",
     },
     {
-      title: "Residential compounds",
-      category: "Community scale",
-      body: "Multi-home compounds and regional developments can benefit from managed cooling infrastructure across many buildings.",
-      image:
-        "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80",
-    },
-    {
-      title: "Water tanks and service structures",
-      category: "Supporting assets",
-      body: "Coating water tanks, pump houses, and other exposed surfaces helps lower ambient heat and protect critical infrastructure.",
+      title: "Rooftop water tanks",
+      category: "Industrial & residential",
+      body: "Across buildings and industrial areas, exposed tanks soak up six months of heat until the water inside runs scalding, hot enough to burn at the pump. Coating them reflects that heat and keeps stored water cooler and safer.",
       image:
         "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1400&q=80",
     },
     {
-      title: "How we prove it",
-      category: "Validation",
-      body: "We are planning side-by-side thermal testing in real Qatar conditions to demonstrate how radiative cooling performs on representative roofs.",
+      title: "Building roofs",
+      category: "Any building",
+      body: "Hot roofs drive heat straight into the floors below, forcing air conditioners to run harder, pushing bills up and wearing the system down over time. The coating reflects that radiation before it ever gets inside.",
       image:
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
+    },
+    {
+      title: "Shelters & sheds",
+      category: "Public & outdoor",
+      body: "Parking shelters, park canopies, and car sheds collect heat all day. A reflective layer keeps these everyday shaded spaces noticeably cooler for the people using them.",
+      image:
+        "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80",
     },
   ],
   scale: {
