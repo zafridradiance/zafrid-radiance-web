@@ -35,6 +35,33 @@ export default function Impact() {
           ))}
         </div>
 
+        {/* Surface temperature comparison */}
+        <Reveal className="mt-12">
+          <div className="mx-auto max-w-2xl rounded-md border border-line bg-linen/50 p-8 lg:p-10">
+            <p className="eyebrow text-glacier">Surface temperature</p>
+            <div className="mt-6 flex items-end justify-between">
+              <div>
+                <p className="text-sm text-muted">Untreated roof</p>
+                <p className="figure mt-1 text-4xl text-terracotta">68°C</p>
+              </div>
+              <span className="mb-2 text-2xl text-glacier">→</span>
+              <div className="text-right">
+                <p className="text-sm text-muted">With Radiance</p>
+                <p className="figure mt-1 text-4xl text-glacier">
+                  <CountUp value="53°C" />
+                </p>
+              </div>
+            </div>
+            {/* Flat thermal bar */}
+            <div className="mt-6 h-2 w-full overflow-hidden rounded-full bg-linen">
+              <div className="h-full w-2/3 rounded-full bg-glacier" />
+            </div>
+            <p className="mt-3 text-sm text-muted">
+              Target reduction of {impact.metrics[0].value} on exposed surfaces.
+            </p>
+          </div>
+        </Reveal>
+
         {/* Highlights */}
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {impact.highlights.map((h, i) => (

@@ -20,7 +20,7 @@ export default function Problem() {
             <Reveal
               key={point.title}
               delay={i * 120}
-              className="group bg-parchment p-8 transition-colors duration-500 hover:bg-linen lg:p-10"
+              className="bg-parchment p-8 lg:p-10"
             >
               <span className="figure text-4xl text-terracotta/50">
                 {String(i + 1).padStart(2, "0")}

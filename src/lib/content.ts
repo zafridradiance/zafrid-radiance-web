@@ -21,7 +21,7 @@ export const site = {
 
 /* Navigation — anchors map to section ids on the single page. */
 export const nav = [
-  { label: "Heat Challenge", href: "#vision" },
+  { label: "The Issue", href: "#vision" },
   { label: "The Science", href: "#approach" },
   { label: "Impact", href: "#impact" },
   { label: "Applications", href: "#work" },
@@ -47,21 +47,21 @@ export const hero = {
 
 /* ---- Problem / The Challenge ------------------------------------------ */
 export const problem = {
-  eyebrow: "The Heat Challenge",
-  title: "Qatar’s rooftops are heating buildings, demand, and the grid.",
-  lead: "Intense solar exposure turns ordinary roofs into heat sources, increasing air-conditioning load and amplifying peak power demand across the country.",
+  eyebrow: "The Issue",
+  title: "Six months of relentless heat, trapped in the city.",
+  lead: "From May to October, Qatar absorbs intense solar radiation. Buildings soak up that heat and release it back, warming the surroundings until the entire city stays hot — day and night.",
   points: [
     {
-      title: "Baking rooftops",
-      body: "Solar radiation and dark roof surfaces trap heat, making rooftops far hotter than the air above them and driving interior cooling needs higher.",
+      title: "The city absorbs the heat",
+      body: "For six months a year, May through October, solar radiation pours onto Qatar. Buildings absorb this heat and radiate it back into their surroundings, turning whole neighbourhoods — and the city itself — into a heat trap.",
     },
     {
-      title: "Rising grid pressure",
-      body: "Every extra degree of roof heat adds to air-conditioning demand, straining Qatar’s power network during the hottest months.",
+      title: "Cooling load and rising bills",
+      body: "All that captured heat forces buildings to lean on artificial cooling. Air conditioners run harder at peak times, placing a heavy load on the grid and pulling electricity bills steadily higher. There needs to be a way to remove this extra heat before it ever gets inside.",
     },
     {
-      title: "A missing system",
-      body: "Cooling has too often been treated as a commodity instead of built environment infrastructure designed for Qatar’s climate and Vision 2030 goals.",
+      title: "A toll on health",
+      body: "Persistent urban heat is more than discomfort. It raises the risk of heat exhaustion and heat stroke, drives dehydration and cardiovascular strain, and worsens air quality that aggravates respiratory conditions like asthma.",
     },
   ],
 };
@@ -198,7 +198,7 @@ export const footer = {
     {
       heading: "Explore",
       links: [
-        { label: "Heat Challenge", href: "#vision" },
+        { label: "The Issue", href: "#vision" },
         { label: "The Science", href: "#approach" },
         { label: "About", href: "#about" },
       ],

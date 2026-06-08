@@ -36,7 +36,6 @@ export default function Navbar() {
           className="group flex items-center gap-3"
           aria-label={`${site.name} home`}
         >
-          <Sunburst className="h-7 w-7 text-glacier transition-transform duration-500 group-hover:rotate-45" />
           <span className="font-serif text-xl tracking-tight text-ink">
             {site.name}
           </span>
@@ -117,31 +116,5 @@ export default function Navbar() {
         </a>
       </div>
     </header>
-  );
-}
-
-/** Minimal engraved-style sunburst brand ornament. */
-function Sunburst({ className = "" }: { className?: string }) {
-  const rays = Array.from({ length: 8 });
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      className={className}
-      aria-hidden
-    >
-      <circle cx="12" cy="12" r="4" />
-      {rays.map((_, i) => {
-        const a = (i * Math.PI) / 4;
-        const x1 = 12 + Math.cos(a) * 7;
-        const y1 = 12 + Math.sin(a) * 7;
-        const x2 = 12 + Math.cos(a) * 9.5;
-        const y2 = 12 + Math.sin(a) * 9.5;
-        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />;
-      })}
-    </svg>
   );
 }

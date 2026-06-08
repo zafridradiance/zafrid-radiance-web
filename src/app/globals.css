@@ -68,23 +68,12 @@ body {
   font-family: var(--font-sans);
   font-size: 17px;
   line-height: 1.65;
+  overflow-x: hidden;
 }
 
 ::selection {
   background: var(--color-glacier);
   color: var(--color-parchment);
-}
-
-/* Thin glacier scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: var(--color-pine-deep);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--color-glacier);
-  border-radius: 9999px;
 }
 
 /* ---- Utilities -------------------------------------------------------- */
