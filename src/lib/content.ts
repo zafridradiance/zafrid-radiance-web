@@ -176,12 +176,6 @@ export const work = {
       image: "",
     },
     {
-      title: "Fuel & storage facilities",
-      category: "Storage depots",
-      body: "Exposed tanks and depots absorb relentless heat, raising temperatures and risk. Reflective coating helps keep stored material cooler and safer.",
-      image: "",
-    },
-    {
       title: "Petrol stations",
       category: "Forecourt canopies",
       body: "Forecourt canopies and pumps sit in full sun all day. A reflective coating keeps the canopy and the area beneath it cooler for staff, customers, and fuelling equipment.",
