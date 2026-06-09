@@ -187,6 +187,12 @@ export const work = {
       body: "Factories, plants, and yards run hot machinery under relentless sun. Coating roofs and exposed surfaces lowers ambient heat across the site and protects equipment and workers.",
       image: "/app-industrial.jpg",
     },
+    {
+      title: "Roads & pedestrian crossings",
+      category: "Pavements (pilot)",
+      body: "Asphalt and crossings store the day's heat and radiate it back into the street. We are exploring cooler coatings for low-speed surfaces, crossings, sidewalks, and plazas, to ease foot-level heat and the urban heat-island effect.",
+      image: "",
+    },
   ],
   scale: {
     eyebrow: "How it scales",
