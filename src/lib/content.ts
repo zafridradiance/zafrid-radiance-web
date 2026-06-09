@@ -191,7 +191,7 @@ export const work = {
       title: "Roads & pedestrian crossings",
       category: "Pavements (pilot)",
       body: "Asphalt and crossings store the day's heat and radiate it back into the street. We are exploring cooler coatings for low-speed surfaces, crossings, sidewalks, and plazas, to ease foot-level heat and the urban heat-island effect.",
-      image: "",
+      image: "/app-roads.jpg",
     },
   ],
   scale: {
